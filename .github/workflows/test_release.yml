@@ -1,0 +1,15 @@
+name: test-release
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ncipollo/release-action@v1
+      with:
+        tag: v1.0.1
+        name: v1.0.1
+        body: |
+          This is a test
+          message
